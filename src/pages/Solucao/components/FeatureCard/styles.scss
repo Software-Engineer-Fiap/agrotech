@@ -1,0 +1,38 @@
+.feature-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    width: 12vmax;
+    height: 8vmax;
+
+    gap: .4vmax;
+    padding: 20px;
+
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    border-radius: .4vmax;
+
+    h3 {
+        font-size: 1.1vmax;
+        font-weight: 700;
+
+        color: #3E7A1E;
+
+        text-align: center;
+    }
+
+    p {
+        font-size: .7vmax;
+        font-weight: 500;
+
+        line-height: 1.4;
+
+        color: #3E7A1E;
+
+        text-align: center;
+    }
+}

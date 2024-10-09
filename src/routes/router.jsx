@@ -5,11 +5,11 @@ import {
     Routes
 } from 'react-router-dom';
 
-import Sobre from '../pages/Home';
-import Solucao from '../pages/Equipe';
-import Regiao from '../pages/Contratos';
-import Adubo from '../pages/Custos';
-import Demandas from '../pages/Demandas';
+import Sobre from '../pages/Sobre';
+import Solucao from '../pages/Solucao';
+import Regiao from '../pages/Regiao';
+import Adubo from '../pages/Adubo';
+import Capacitacao from '../pages/Capacitacao';
 
 const Router = () => {    
     return (
@@ -18,7 +18,7 @@ const Router = () => {
             <Route path='/solucao' element={<Solucao/>}/>
             <Route path='/regiao' element={<Regiao/>}/>
             <Route path='/adubo' element={<Adubo/>}/>
-            <Route path='/capacitacao' element={<Demandas/>}/>
+            <Route path='/capacitacao' element={<Capacitacao/>}/>
         </Routes>
     );
 };

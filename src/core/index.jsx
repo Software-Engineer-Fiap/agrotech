@@ -1,25 +1,31 @@
 import React from 'react';
 
-import { 
-    BrowserRouter 
+import {
+    BrowserRouter
 } from 'react-router-dom';
 
 import Router from '../routes/router';
 
+import Footer from '../components/Footer';
+import Header from '../components/Header';
+
+import Icon from '../assets/images/icon.png'
+
 import './styles.scss';
 import '../assets/styles/global.scss';
 
-const App = () => {
+const App = () => {    
     return (
         <div className='container'>
-            <div className='header'>
+            <Header/>
 
-            </div>
             <div className='content'>
                 <BrowserRouter>
-                    <Router/>
+                    <Router />
                 </BrowserRouter>
             </div>
+            
+            <Footer/>
         </div>
     );
 };

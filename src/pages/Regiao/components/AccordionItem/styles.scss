@@ -1,0 +1,50 @@
+.accordion-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: 3.6vmax;
+
+    border-radius: .2vmax;
+
+    background: linear-gradient(90deg, #2F5C0F, #6ba628);
+    
+    overflow: hidden;
+    
+    cursor: pointer;
+
+    .accordion-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 100%;
+
+        padding: 0vmax 1.8vmax 0vmax 1.2vmax;
+    
+        font-size: 1.2vmax;
+        font-weight: 600;
+
+        color: #EBEBEB;
+    }
+
+    .icon {
+        font-size: .8vmax;
+        font-weight: 600;
+
+        color: #EBEBEB;
+    }
+
+    .accordion-content {
+        padding: 15px;
+        
+        background-color: #dddcdc;
+
+        font-size: .8vmax;
+        font-weight: 400;
+
+        color: #292929;
+    }
+}
