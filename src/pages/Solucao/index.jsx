@@ -15,7 +15,7 @@ const Solucao = () => {
                 <p>
                     A SeedFlow é uma plataforma inovadora que visa capacitar pequenos produtores de sementes com acesso a informações essenciais, recomendações personalizadas e ferramentas para uma produção mais eficiente...
                 </p>
-                <button>Acesse estudos e pesquisas</button>
+                <button className='hoverEffect'>Acesse estudos e pesquisas</button>
             </header>
 
             <section className='features-section'>

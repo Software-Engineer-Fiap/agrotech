@@ -2,14 +2,20 @@ import React from 'react';
 
 import './styles.scss';
 
-const InfoCard = ({ title, description, image, buttonText, reverse }) => {
+const InfoCard = ({ title, description, image, buttonText, reverse, duration }) => {
     return (
         <div className='info-card-container'>
             <div className={`info-card ${reverse ? 'reverse' : ''}`}>
                 <div className="info-content">
                     <h2>{title}</h2>
                     <p>{description}</p>
-                    <button>{buttonText}</button>
+                    {duration && <p>Duração: {duration}</p>}
+                    <button className='hoverEffect'>
+                        <span>
+                            ▶
+                        </span>
+                        {buttonText}
+                    </button>
                 </div>
                 <div className="info-image">
                     <img src={image} alt={title} />

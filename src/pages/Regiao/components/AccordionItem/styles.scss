@@ -5,17 +5,17 @@
     flex-direction: column;
 
     width: 100%;
-    height: 3.6vmax;
-
+    
     border-radius: .2vmax;
-
+    
     background: linear-gradient(90deg, #2F5C0F, #6ba628);
     
     overflow: hidden;
     
     cursor: pointer;
-
+    
     .accordion-title {
+        height: 3.6vmax;
         display: flex;
         align-items: center;
         justify-content: space-between;

@@ -4,8 +4,9 @@ import './styles.scss';
 
 import InfoCard from './components/InfoCard';
 
-import organicFertilizerImage from '../../assets/images/organic.png';
-import chemicalFertilizerImage from '../../assets/images/chemical.png';
+import waterResourcesImage from "../../assets/images/fotoIrrigacao.png"
+import marketingImage from "../../assets/images/fotoEmbalagem.png"
+import droneImage from "../../assets/images/fotoDrone.png"
 
 const Capacitacao = () => {
     return (
@@ -16,46 +17,28 @@ const Capacitacao = () => {
             </header>
             <section className='cap-info-cards'>
                 <InfoCard
-                    title='Adubos Orgânicos'
-                    description='Adubos orgânicos são compostos por materiais de origem vegetal ou animal, como esterco e restos de culturas. Eles aumentam sua capacidade de retenção de água e nutrientes.'
-                    image={organicFertilizerImage}
+                    title='Gestão de Recursos Hídricos'
+                    description='Curso Focado em técnicas eficientes de uso da água, irrigação e conservação para melhorar a produtividade e reduzir desperdícios.'
+                    duration="10 horas"
+                    image={waterResourcesImage}
                     buttonText='INICIAR CURSO'
                     reverse={false}
                 />
                 <InfoCard
-                    title='Adubos Químicos'
-                    description='Os adubos químicos são formulados industrialmente e contêm nutrientes em concentrações precisas, como nitrogênio (N), fósforo (P) e potássio (K).'
-                    image={chemicalFertilizerImage}
+                    title='Marketing e Gestão de Negócios Agrícolas'
+                    description='Esse curso ensina como comercializar produtos, gerenciar uma propriedade agrícola e maximizar o retorno financeiro.'
+                    duration="18 horas"
+                    image={marketingImage}
                     buttonText='INICIAR CURSO'
                     reverse={true}
                 />
                 <InfoCard
-                    title='Adubos Orgânicos'
-                    description='Adubos orgânicos são compostos por materiais de origem vegetal ou animal, como esterco e restos de culturas. Eles aumentam sua capacidade de retenção de água e nutrientes.'
-                    image={organicFertilizerImage}
+                    title='Tecnologias Digitais e Inovação no Campo'
+                    description='Introduz ferramentas tecnológicas, como sistemas de gestão agrícola e sensores, para modernizar práticas e melhorar a eficiência.'
+                    duration="16 horas"
+                    image={droneImage}
                     buttonText='INICIAR CURSO'
                     reverse={false}
-                />
-                <InfoCard
-                    title='Adubos Químicos'
-                    description='Os adubos químicos são formulados industrialmente e contêm nutrientes em concentrações precisas, como nitrogênio (N), fósforo (P) e potássio (K).'
-                    image={chemicalFertilizerImage}
-                    buttonText='INICIAR CURSO'
-                    reverse={true}
-                />
-                <InfoCard
-                    title='Adubos Orgânicos'
-                    description='Adubos orgânicos são compostos por materiais de origem vegetal ou animal, como esterco e restos de culturas. Eles aumentam sua capacidade de retenção de água e nutrientes.'
-                    image={organicFertilizerImage}
-                    buttonText='INICIAR CURSO'
-                    reverse={false}
-                />
-                <InfoCard
-                    title='Adubos Químicos'
-                    description='Os adubos químicos são formulados industrialmente e contêm nutrientes em concentrações precisas, como nitrogênio (N), fósforo (P) e potássio (K).'
-                    image={chemicalFertilizerImage}
-                    buttonText='INICIAR CURSO'
-                    reverse={true}
                 />
             </section>
         </div>
