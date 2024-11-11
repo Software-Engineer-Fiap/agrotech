@@ -1,0 +1,24 @@
+{
+    "rewrites": [
+        {
+            "source": "/",
+            "destination": "/index.html"
+        },
+        {
+            "source": "/solucao",
+            "destination": "/index.html"
+        },
+        {
+            "source": "/regiao",
+            "destination": "/index.html"
+        },
+        {
+            "source": "/adubo",
+            "destination": "/index.html"
+        },
+        {
+            "source": "/capacitacao",
+            "destination": "/index.html"
+        }
+    ]
+}
