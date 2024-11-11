@@ -45,26 +45,31 @@ const teamMembers = [
 const Sobre = () => {
     return (
         <div className='team-page'>
-            <div className='team-section'>
-                <h2>Quem Somos:</h2>
-                <div className='team-members'>
-                    {teamMembers.map((member, index) => (
-                        <TeamMember
-                            key={index}
-                            name={member.name}
-                            role={member.role}
-                            photo={member.photo}
-                        />
-                    ))}
+            <div className='team-page-members'>
+                <div className='team-section'>
+                    <h2>Quem Somos:</h2>
+                    <div className='team-members'>
+                        {teamMembers.map((member, index) => (
+                            <TeamMember
+                                key={index}
+                                name={member.name}
+                                role={member.role}
+                                photo={member.photo}
+                            />
+                        ))}
+                    </div>
+                </div>
+                <div className='technologies-section'>
+                    <h2>Tecnologias Usadas:</h2>
+                    <div className='technology-icons'>
+                        <img src={reactLogo} alt='React Logo' />
+                        <img src={sassLogo} alt='Sass Logo' />
+                        <img src={jsLogo} alt='JavaScript Logo' />
+                    </div>
                 </div>
             </div>
-            <div className='technologies-section'>
-                <h2>Tecnologias Usadas:</h2>
-                <div className='technology-icons'>
-                    <img src={reactLogo} alt='React Logo' />
-                    <img src={sassLogo} alt='Sass Logo' />
-                    <img src={jsLogo} alt='JavaScript Logo' />
-                </div>
+            <div className='video'>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FZcuSrFdUqo?si=p_EObKRpYc-xwdVN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
     );
