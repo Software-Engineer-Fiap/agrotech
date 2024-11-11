@@ -2,8 +2,6 @@ import React from 'react';
 
 import './styles.scss';
 
-import TeamMember from './Components/TeamMember';
-
 import reactLogo from '../../assets/images/react-logo.png';
 import sassLogo from '../../assets/images/sass-logo.png';
 import jsLogo from '../../assets/images/js-logo.png';
@@ -50,12 +48,11 @@ const Sobre = () => {
                     <h2>Quem Somos:</h2>
                     <div className='team-members'>
                         {teamMembers.map((member, index) => (
-                            <TeamMember
-                                key={index}
-                                name={member.name}
-                                role={member.role}
-                                photo={member.photo}
-                            />
+                            <div className="team-member">
+                                <img src={member.photo} alt={member.name} />
+                                <h3>{member.name}</h3>
+                                <p>{member.role}</p>
+                            </div>
                         ))}
                     </div>
                 </div>
