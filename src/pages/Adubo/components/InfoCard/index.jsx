@@ -9,7 +9,7 @@ const InfoCard = ({ title, description, image, buttonText, reverse }) => {
                 <div className="info-content">
                     <h2>{title}</h2>
                     <p>{description}</p>
-                    <button>{buttonText}</button>
+                    <button className='hoverEffect'>{buttonText}</button>
                 </div>
                 <div className="info-image">
                     <img src={image} alt={title} />

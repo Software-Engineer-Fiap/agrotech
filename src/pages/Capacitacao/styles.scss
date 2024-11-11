@@ -1,7 +1,7 @@
 .cap-solution-page {
     display: flex;
     align-items: center;
-
+    justify-content: center;
     flex-direction: column;
 
     width: 100%;
@@ -42,7 +42,6 @@
 
     .cap-info-cards {
         display: flex;
-        justify-content: center;
         
         flex-direction: column;
 
@@ -52,5 +51,12 @@
 
         width: 100%;
         min-height: 40vmax;
+    }
+
+    .cap-info-cards > :nth-child(odd){
+        justify-content: start;
+    }
+    .cap-info-cards > :nth-child(even){
+        justify-content: end;
     }
 }
